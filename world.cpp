@@ -190,15 +190,16 @@ void World::AddBlock (int x, int y, int z, int r, int g, int b)
     }
     int c = GetChunkId(x, y, z, true);
     if(c != -1) {
-        if(!((r == 128 && g == 20 && b == 20) ||
-          (r == 128 && g == 7 && b == 7) ||
-          (r == 158 && g == 7 && b == 7) ||
-          (r == 158 && g == 20 && b == 20))) {
-            r = (int)(r*0.21);
-            g = (int)(g*0.72);
-            b = (int)(b*0.07);
-            r = g = b = (r+g+b);
-        }
+        // Make greyscale
+        //if(!((r == 128 && g == 20 && b == 20) ||
+        //  (r == 128 && g == 7 && b == 7) ||
+        //  (r == 158 && g == 7 && b == 7) ||
+        //  (r == 158 && g == 20 && b == 20))) {
+        //    r = (int)(r*0.21);
+        //    g = (int)(g*0.72);
+        //    b = (int)(b*0.07);
+        //    r = g = b = (r+g+b);
+        //}
         chunks[c]->AddBlock(x, y, z, r, g, b);
     }
 }
