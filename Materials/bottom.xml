@@ -1,0 +1,10 @@
+<material>
+    <technique name="Techniques/DiffNormal.xml" quality="1" />
+    <technique name="Techniques/Diff.xml" quality="1" />
+    <texture unit="diffuse" name="Textures/bottom.jpg" />
+    <texture unit="normal" name="Textures/StoneNormal.dds" />
+    <shader psdefines="PACKEDNORMAL" />
+    <parameter name="MatSpecColor" value="0.1 0.1 0.1 16" />
+    <parameter name="UOffset" value="40 0 0 0" />
+    <parameter name="VOffset" value="0 40 0 0" />
+</material>

@@ -1,0 +1,7 @@
+<material>
+    <technique name="Techniques/NoTextureVCol.xml" />
+    <!--    <parameter name="MatSpecColor" value="0.7 0.7 0.5 16" />
+    <parameter name="MatEnvMapColor" value="0.2 0.2 0.2" />
+ 	<parameter name="MatEmissiveColor" value="0.1 0.1 0.1" />
+    -->
+</material>

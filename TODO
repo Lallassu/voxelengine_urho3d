@@ -1,0 +1,85 @@
+TODO
+----------
+- Game: GTA liknande
+ 
+  STUFF
+==============
+- Char should have two types
+    - Car
+        - Drive mode
+    - Char
+        - Weapons etc.
+        - shoot etc.
+- Add type to chunk
+    - World
+    - Char
+    - Car
+    - Object
+    - CharPart
+- Floodfill should take into account removed blocks
+  before creating new chunks.
+- Make splatter of debris? -> floodfill.
+    - voronoi algo.
+- Calc center position of a RigidBody chunk
+    -> Have own physics for chunks
+        -> Own physics class for chunk physics
+- If part of object that's hit, explode it.
+    -> Make diff between orig and part of object.
+    -> Let part of objects decay
+
+  ITEMS 
+==============
+- Boxes with plants
+- Tables in the park
+- Benches in the park and other places.
+- Trashcans
+- Cones around hole in the street.
+- Add lights to traffic lights (working)
+- Add doors to houses
+- Clone particle effects for smoke on roofs.
+    -> White smoke?
+
+    PEOPLE
+===============
+- Add people
+    - Can walk where sidewalks are / green/  grey areas
+    - Can cross street, but rather not.
+    - Can cross at crossings, prefer to.
+    - Can be hit by cars.
+
+    CARS
+=================
+- Add cars
+    - Can drive where roads are.
+    - Make sure they drive on correct side?
+        - Right side closet to sidewalk.
+        - Keep X distance towards sidewalk.
+        - Make them turn randomly
+        - Different speeds.
+        - Collide -> stop
+- tire marks
+- Drive car with good feeling
+- smoke when starting/acceleration etc.
+- If hit something, explode world + car
+- Car health
+    - Smoke + fire depends on status
+    - Explode after crashed.
+
+    ENGINE
+===================
+X. Phys-engine: Update less frames and then lerp between positions
+X. World floodfill
+X. Move enemies.
+    -> Animation
+    -> Shoot
+    -> Enemies dies when 10% are gone of their body
+X. Respawn of char
+X. Reset of map
+X. Randomise objects made with Magicavoxel
+X. Event-handler -> Game events
+X. HUD
+X. Particles float on water and sink slowly
+X. Mana-portals
+X. Save/Load level
+X. Explosion "wave" effect
+
